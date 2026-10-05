@@ -1,0 +1,6 @@
+{
+  "name": "TaskFlow - Smart Cloud To-Do & Calendar Sync",
+  "description": "Modern task management app with priorities, categories, deadlines, dark mode, offline-first cloud sync, push notifications, and external calendar integration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
