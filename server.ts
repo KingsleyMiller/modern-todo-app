@@ -216,6 +216,11 @@ app.get('/api/calendar/:syncKey.ics', (req, res) => {
 
 // Setup Vite or static serving
 async function setupApp() {
+  const publicPath = path.resolve(__dirname, 'public');
+  if (fs.existsSync(publicPath)) {
+    app.use(express.static(publicPath));
+  }
+
   const isDev = process.env.NODE_ENV !== 'production';
 
   if (isDev) {
